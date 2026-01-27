@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>新宮城本丸｜動画選択</title>
+
+<!-- 明朝系フォント（しっぽり明朝） -->
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== 全体 ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family:
+    "Shippori Mincho",
+    "游明朝",
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== 見出し ===== */
+.header {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3.2rem;        /* ← 大きくした */
+  letter-spacing: 0.22em;   /* ← 城っぽく間を広めに */
+  font-weight: 600;
+}
+
+.header p {
+  margin-top: 18px;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  opacity: 0.85;
+}
+
+/* ===== ボタンエリア ===== */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  padding-bottom: 40px;
+}
+
+/* カード */
+.card {
+  background: none;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 丸ボタン */
+.btn-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.25s ease;
+}
+
+.card:hover .btn-image {
+  transform: scale(1.08);
+}
+
+/* ラベル */
+.label {
+  margin-top: 18px;
+  font-size: 1.25rem;
+  letter-spacing: 0.14em;
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.4rem;
+    letter-spacing: 0.18em;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .btn-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>新宮城本丸</h1>
+  <p>ご覧になりたい動画を選択してください</p>
+</div>
+
+<div class="container">
+  <div class="card" onclick="location.href='video1.html'">
+    <img src="botan01.png" class="btn-image" alt="">
+    <div class="label">出丸</div>
+  </div>
+
+  <div class="card" onclick="location.href='video2.html'">
+    <img src="botan02.png" class="btn-image" alt="">
+    <div class="label">搦手門</div>
+  </div>
+
+  <div class="card" onclick="location.href='video3.html'">
+    <img src="botan03.png" class="btn-image" alt="">
+    <div class="label">天守</div>
+  </div>
+</div>
+
+</body>
+</html>

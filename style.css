@@ -8,6 +8,8 @@ body {
 background-size: 90px 45px;
 }
 .container {
+  position: relative;
+  z-index: 10; /* ← これ重要 */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,7 +17,9 @@ background-size: 90px 45px;
   align-items: center;
 }
 
-h1 {
+h1, h2, p {
+  position: relative;
+  z-index: 10;
   opacity: 1;
   color: #fff;
   font-size: 32px;        /* ← 大きく */

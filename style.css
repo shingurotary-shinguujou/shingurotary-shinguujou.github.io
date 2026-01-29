@@ -14,10 +14,10 @@ body {
 }
 
 h1 {
-  font-size: 20px;
-  letter-spacing: 0.2em;
-  margin-bottom: 40px;
-  opacity: 0.8;
+  font-size: 32px;        /* ← 大きく */
+  letter-spacing: 0.25em;
+  margin-bottom: 12px;   /* ← 副見出しとの間を詰める */
+  opacity: 0.9;
 }
 
 .choices {
@@ -60,6 +60,6 @@ h1 {
 .subtitle {
   font-size: 14px;
   letter-spacing: 0.15em;
-  margin-bottom: 48px;
+  margin-bottom: 64px;   /* ← ここを広げる */
   opacity: 0.6;
 }

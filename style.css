@@ -16,7 +16,7 @@ body {
 h1 {
   font-size: 32px;        /* ← 大きく */
   letter-spacing: 0.25em;
-  margin-bottom: 12px;   /* ← 副見出しとの間を詰める */
+  margin-bottom: 5px;   /* ← 副見出しとの間を詰める */
   opacity: 0.9;
   font-weight: 500;
 }

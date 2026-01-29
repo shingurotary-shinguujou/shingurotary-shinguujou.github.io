@@ -61,5 +61,5 @@ h1 {
 .subtitle {
   font-size: 14px;
   letter-spacing: 0.15em;
-  margin-bottom: 64px;   /* ← ここを広げる */
+  margin-bottom: 80px;   /* ← ここを広げる */
 }

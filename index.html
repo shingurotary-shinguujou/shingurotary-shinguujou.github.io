@@ -1,130 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>新宮城本丸｜動画選択</title>
-
-<!-- 明朝系フォント（しっぽり明朝） -->
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
-
-<style>
-/* ===== 全体 ===== */
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: #000;
-  color: #fff;
-  font-family:
-    "Shippori Mincho",
-    "游明朝",
-    "Yu Mincho",
-    "Hiragino Mincho ProN",
-    serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* ===== 見出し ===== */
-.header {
-  text-align: center;
-  margin-top: 48px;
-  margin-bottom: 48px;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 3.2rem;        /* ← 大きくした */
-  letter-spacing: 0.22em;   /* ← 城っぽく間を広めに */
-  font-weight: 600;
-}
-
-.header p {
-  margin-top: 18px;
-  font-size: 1rem;
-  letter-spacing: 0.14em;
-  opacity: 0.85;
-}
-
-/* ===== ボタンエリア ===== */
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-  padding-bottom: 40px;
-}
-
-/* カード */
-.card {
-  background: none;
-  padding: 0;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* 丸ボタン */
-.btn-image {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.25s ease;
-}
-
-.card:hover .btn-image {
-  transform: scale(1.08);
-}
-
-/* ラベル */
-.label {
-  margin-top: 18px;
-  font-size: 1.25rem;
-  letter-spacing: 0.14em;
-}
-
-/* ===== スマホ対応 ===== */
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 2.4rem;
-    letter-spacing: 0.18em;
-  }
-
-  .container {
-    grid-template-columns: 1fr;
-    gap: 56px;
-  }
-
-  .btn-image {
-    width: 200px;
-    height: 200px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>動画選択</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="header">
-  <h1>新宮城本丸</h1>
-  <p>ご覧になりたい動画を選択してください</p>
-</div>
+  <a href="index.html" class="back-link">← 戻る</a>
 
-<div class="container">
-  <div class="card" onclick="location.href='video601.html'">
-    <img src="botan1.png" class="btn-image" alt="">
-  </div>
+  <main class="container">
+    <h1>どこを見る？</h1>
 
-  <div class="card" onclick="location.href='video602.html'">
-    <img src="botan2.png" class="btn-image" alt="">
-  </div>
+    <div class="choices">
+      <a href="video601.html" class="choice-btn">出丸</a>
+      <a href="video602.html" class="choice-btn">搦手門</a>
+      <a href="video603.html" class="choice-btn">本丸</a>
+    </div>
+  </main>
+  body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Noto Serif JP", serif;
+}
 
-  <div class="card" onclick="location.href='video603.html'">
-    <img src="botan3.png" class="btn-image" alt="">
-  </div>
-</div>
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.choice-btn {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 18px 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.choice-btn:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.back-link:hover {
+  opacity: 1;
+}
+
 
 </body>
 </html>

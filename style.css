@@ -16,6 +16,8 @@ background-size: 90px 45px;
 }
 
 h1 {
+  opacity: 1;
+  color: #fff;
   font-size: 32px;        /* ← 大きく */
   letter-spacing: 0.25em;
   margin-bottom: 5px;   /* ← 副見出しとの間を詰める */

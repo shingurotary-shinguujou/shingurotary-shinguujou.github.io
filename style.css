@@ -78,3 +78,21 @@ h1, h2, p {
   margin-bottom: 32px; /* ← ボタンと距離 */
   letter-spacing: 0.1em;
 }
+
+.back-text {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 24px;
+  font-size: 16px;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.back-text:hover {
+  opacity: 1;
+}

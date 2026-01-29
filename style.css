@@ -56,3 +56,10 @@ h1 {
 .back-link:hover {
   opacity: 1;
 }
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  margin-bottom: 48px;
+  opacity: 0.6;
+}

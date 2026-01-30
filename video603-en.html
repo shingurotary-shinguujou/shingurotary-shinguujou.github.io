@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,25 +9,27 @@ body {
   margin: 0;
   background: #000;
 }
+
 iframe {
   width: 100vw;
   height: 100vh;
   border: none;
 }
+
 .back {
   position: fixed;
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
-  width: 48px;
-  height: 48px;
+  padding: 12px 20px;
   background: rgba(0,0,0,0.6);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 24px;
+  font-size: 14px;
   opacity: 0.85;
 }
+
 .back:hover {
   opacity: 1;
 }
@@ -41,17 +43,9 @@ iframe {
   allowfullscreen>
 </iframe>
 
-<a href="index-en.html" class="back" aria-label="動画選択に戻る">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-       xmlns="http://www.w3.org/2000/svg">
-    <path d="M15 6L9 12L15 18"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"/>
-  </svg>
+<a href="index-en.html" class="back">
+  ← Back to video selection
 </a>
 
 </body>
 </html>
-
